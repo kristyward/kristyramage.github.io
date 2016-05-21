@@ -28,13 +28,24 @@
     display: inline-block;
 }
 
-.page-title
+.page-center
 {
 	position: absolute;
 	width: 100%;
-	bottom: -48px;
+	bottom: -79.5px;
+}
+
+.page-title
+{
 	font-size: 96px;
+	letter-spacing: 0.3em;
 	text-align: center;
+}
+
+.page-subtitle
+{
+	font-size: 36px;
+	letter-spacing: 0.3em;
 }
 
 
