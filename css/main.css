@@ -1,56 +1,69 @@
-* 
-{
-    text-decoration: none;
+// ----------------------------------- fonts
+/*@font-face {
+    font-family: "IcoMoon";
+    src: url('../fonts/IcoMoon-Free.ttf'),
+    url('../fonts/IcoMoon-Free.ttf') format('truetype');
+}*/
+
+/* ----------------------------------- Generic*/
+* {
+	text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Lato', helvetica, sans-serif;
+    /*font-family: 'Lato', helvetica, sans-serif;*/
 }
+.row {
 
-.container
-{
-	/*max-width: 1200px;*/
+}
+.container {
 	overflow:hidden; 
 	width:100%; 
-	height:100vh; 
+	/*height:100vh; */
 	margin:0 auto; 
 	padding:0; 
-
-	background-image: url("../tea.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-
-	background-color:#fafafa;
 }
-
-.content
-{
-	position: relative;
-	width: 100%;
-	height: 50%;
-	text-align: center;
-    display: inline-block;
-}
-
-.page-center
-{
-	position: absolute;
-	width: 100%;
-	bottom: -79.5px;
-}
-
-.page-title
-{
-	font-size: 96px;
-	letter-spacing: 0.3em;
+#nav {
 	text-align: center;
 }
-
-.page-subtitle
-{
-	font-size: 36px;
-	letter-spacing: 0.3em;
+.nav-item {
+	display: inline-block;
 }
+#footer {
+	width: 100%;
+    background-color: #171717;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+ /*----------------------------------- icons*/
+ .social-footer {
+ 	text-align: center;
+ }
+.icon {
+	color: #fff;
+	font-size: 28px !important;
+    padding: 10px;
+}
+/*.git-hub {
+	content: "f09b";
+}
+.linked-in {
+	content: "f08c";
+}
+.behance {
+	content: "f1b4";
+}
+.vimeo {
+	content: "f40a";
+}
+.instagram {
+	content: "f16d";
+}
+.facebook {
+	content: "f09a";
+}*/
+// ----------------------------------- Extra
+.back-to-top-link {
 
-
-
+}
