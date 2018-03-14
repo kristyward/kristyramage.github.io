@@ -1,12 +1,17 @@
-/*// ----------------------------------- fonts*/
+/* ----------------------------------- fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,700');
 
-/* ----------------------------------- Generic*/
+/* ----------------------------------- 
+** Generic
+*/
 * {
 	text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    /*font-family: 'Lato', helvetica, sans-serif;*/
+    font-family: 'Open Sans', helvetica, sans-serif;
+    letter-spacing: 0.04em;
 }
 .row {
 
@@ -23,7 +28,18 @@
 }
 .nav-item {
 	display: inline-block;
+	font-size: 0.9em;
+    padding: 10px 10px;
+    letter-spacing: 0.1em;
 }
+
+.info-container {
+	padding: 1em;
+}
+.info-container p {
+	font-size: 0.9em;
+}
+
 #footer {
 	width: 100%;
     background-color: #171717;
@@ -31,7 +47,13 @@
     position: relative;
     text-align: center;
 }
- /*----------------------------------- icons*/
+.footer-copyright {
+	font-size: 0.8em;
+    padding: 10px 0px;
+}
+ /*----------------------------------- 
+ ** icons
+ */
  .social-footer {
  	text-align: center;
  }
@@ -40,7 +62,10 @@
 	font-size: 28px !important;
     padding: 10px;
 }
-/*// ----------------------------------- Extra*/
+
+/* ----------------------------------- 
+** Extra
+*/
 .back-to-top-link {
 
 }
