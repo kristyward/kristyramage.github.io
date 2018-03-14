@@ -1,9 +1,4 @@
-// ----------------------------------- fonts
-/*@font-face {
-    font-family: "IcoMoon";
-    src: url('../fonts/IcoMoon-Free.ttf'),
-    url('../fonts/IcoMoon-Free.ttf') format('truetype');
-}*/
+/*// ----------------------------------- fonts*/
 
 /* ----------------------------------- Generic*/
 * {
@@ -45,25 +40,7 @@
 	font-size: 28px !important;
     padding: 10px;
 }
-/*.git-hub {
-	content: "f09b";
-}
-.linked-in {
-	content: "f08c";
-}
-.behance {
-	content: "f1b4";
-}
-.vimeo {
-	content: "f40a";
-}
-.instagram {
-	content: "f16d";
-}
-.facebook {
-	content: "f09a";
-}*/
-// ----------------------------------- Extra
+/*// ----------------------------------- Extra*/
 .back-to-top-link {
 
 }
