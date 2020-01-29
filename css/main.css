@@ -37,6 +37,10 @@
 .info-container p {
 	font-size: 0.9em;
 }
+#about .info-container {
+	width: 50%;
+	min-width: 300px;
+}
 
 #footer {
 	width: 100%;
