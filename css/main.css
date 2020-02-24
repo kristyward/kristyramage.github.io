@@ -1,7 +1,9 @@
 /* ----------------------------------- fonts
 */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,700');
-
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,700'); */
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:600,600i,900,900i&display=swap');
 /* ----------------------------------- 
 ** Generic
 */
@@ -10,9 +12,23 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', helvetica, sans-serif;
-    letter-spacing: 0.04em;
+    font-family: 'Oxygen', helvetica, sans-serif;
+	letter-spacing: 0.04em;
+	line-height: 1.4em;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 60px;
+	font-weight: 600;
+}
+h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+}
+
 .container {
 	/* overflow:hidden;  */
 	/* width:100%;  */
@@ -37,10 +53,6 @@
 .info-container p {
 	font-size: 0.9em;
 }
-#about .info-container {
-	flex-grow: 1;
-	max-width: 450px;
-}
 
 #footer {
 	width: 100%;
@@ -56,17 +68,17 @@
 /*----------------------------------- 
  ** flexbox
  */
-.flex-container {
+ .flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .skill-container{
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	margin: 1em;
 	text-align: center;
-}
+} 
  /*----------------------------------- 
  ** icons
  */
@@ -92,13 +104,47 @@
 }
 .logo img {
 	max-width: 300px;
-	width: 100px;
+	width: 20%;
+	min-width: 100px;
 	position: absolute;
 	top: 0;
 }
 .logo-spacer {
 	padding-top: 2.5em;
 }
-/* .back-to-top-link {
+.title {
 
-} */
+}
+.subtitle {
+	font-family: 'Satisfy', cursive;
+	font-size: 20px;
+	/* margin-top: -20px; */
+	margin-top: 15px;
+    margin-bottom: 15px;
+	/* -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg); */
+}
+/* ----------------------------------- 
+** Desktop
+*/
+@media only screen and (min-width: 1200px) {
+	#about .info-container {
+		max-width: 450px;
+	}
+}
+/* ----------------------------------- 
+** Tablet 
+*/
+@media only screen and (min-width: 812px) and (max-width: 1199px) {
+	
+	.social-icon {
+		padding: 1em;
+	}
+}
+/* ----------------------------------- 
+** Mobile  
+*/
+@media only screen and (min-width: 0px) and (max-width: 811px) {
+	
+}
