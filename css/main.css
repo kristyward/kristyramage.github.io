@@ -1,6 +1,5 @@
 /* ----------------------------------- fonts
 */
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,700'); */
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:600,600i,900,900i&display=swap');
@@ -28,14 +27,6 @@ h3 {
 	font-family: 'Playfair Display', serif;
 	font-size: 25px;
 }
-
-.container {
-	/* overflow:hidden;  */
-	/* width:100%;  */
-	/*height:calc(100vh - 6em); */
-	margin:1em; 
-	padding:1em;
-}
 .title {
 
 }
@@ -49,10 +40,41 @@ h3 {
     -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
 }
+
+.container {
+	/* overflow:hidden;  */
+	/* width:100%;  */
+	/*height:calc(100vh - 6em); */
+	margin:1em; 
+	padding:1em;
+}
+.info-container {
+	padding: 1em;
+}
+.info-container p {
+	font-size: 0.9em;
+}
 /* ----------------------------------- 
-** 
+** Logo
 */
-#nav {
+.logo {
+	min-height: 2.5em;
+}
+.logo img {
+	max-width: 120px;
+	width: 20%;
+	min-width: 100px;
+	position: absolute;
+	top: 0;
+}
+.logo-spacer {
+	padding-top: 2.5em;
+}
+
+/* ----------------------------------- 
+** Nav
+*/
+/* #nav {
 	text-align: center;
 }
 .nav-item {
@@ -60,27 +82,30 @@ h3 {
 	font-size: 0.9em;
     padding: 10px 10px;
     letter-spacing: 0.1em;
-}
+} */
 
-.info-container {
-	padding: 1em;
-}
-.info-container p {
-	font-size: 0.9em;
-}
 
+
+/*----------------------------------- 
+ ** About
+ */
 #about .info-container {
 	max-width: 510px;
 	display: block;
     margin: 0 auto;
 }
+/*----------------------------------- 
+ ** Skills
+ */
 .skills-row {
 	text-align: center;
 }
 .skill-container {
 	display: inline-block;
 }
-
+/*----------------------------------- 
+ ** footer
+ */
 #footer {
 	width: 100%;
     background-color: #fff;
@@ -123,22 +148,7 @@ h3 {
     padding: 0.3em;
 }
 
-/* ----------------------------------- 
-** Extra
-*/
-.logo {
-	min-height: 2.5em;
-}
-.logo img {
-	max-width: 120px;
-	width: 20%;
-	min-width: 100px;
-	position: absolute;
-	top: 0;
-}
-.logo-spacer {
-	padding-top: 2.5em;
-}
+
 
 /* ----------------------------------- 
 ** Desktop
