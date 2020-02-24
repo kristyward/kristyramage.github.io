@@ -115,7 +115,7 @@ h3 {
 }
 .footer-copyright {
 	font-size: 0.8em;
-    padding: 0.5em 0;
+    padding: 0 0 1.5em 0;
 }
 /*----------------------------------- 
  ** flexbox
@@ -126,11 +126,6 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-/* .skill-container{
-	flex-grow: 1;
-	margin: 1em;
-	text-align: center;
-}   */
  /*----------------------------------- 
  ** icons
  */
@@ -163,9 +158,6 @@ h3 {
 */
 @media only screen and (min-width: 812px) and (max-width: 1199px) {
 	
-	.social-icon {
-		padding: 1em;
-	}
 }
 /* ----------------------------------- 
 ** Mobile  
