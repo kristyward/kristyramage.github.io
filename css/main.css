@@ -34,9 +34,24 @@ h3 {
 	/* width:100%;  */
 	/*height:calc(100vh - 6em); */
 	margin:1em; 
-	padding:1em; 
-	background-color: #ffffcb;
+	padding:1em;
 }
+.title {
+
+}
+.subtitle {
+	font-family: 'Satisfy', cursive;
+	font-size: 20px;
+	width: fit-content;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	-webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+/* ----------------------------------- 
+** 
+*/
 #nav {
 	text-align: center;
 }
@@ -54,6 +69,18 @@ h3 {
 	font-size: 0.9em;
 }
 
+#about .info-container {
+	max-width: 510px;
+	display: block;
+    margin: 0 auto;
+}
+.skills-row {
+	text-align: center;
+}
+.skill-container {
+	display: inline-block;
+}
+
 #footer {
 	width: 100%;
     background-color: #fff;
@@ -68,17 +95,17 @@ h3 {
 /*----------------------------------- 
  ** flexbox
  */
- .flex-container {
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.skill-container{
-	/* flex-grow: 1; */
+/* .skill-container{
+	flex-grow: 1;
 	margin: 1em;
 	text-align: center;
-} 
+}   */
  /*----------------------------------- 
  ** icons
  */
@@ -103,7 +130,7 @@ h3 {
 	min-height: 2.5em;
 }
 .logo img {
-	max-width: 300px;
+	max-width: 120px;
 	width: 20%;
 	min-width: 100px;
 	position: absolute;
@@ -112,19 +139,7 @@ h3 {
 .logo-spacer {
 	padding-top: 2.5em;
 }
-.title {
 
-}
-.subtitle {
-	font-family: 'Satisfy', cursive;
-	font-size: 20px;
-	/* margin-top: -20px; */
-	margin-top: 15px;
-    margin-bottom: 15px;
-	/* -webkit-transform: rotate(-4deg);
-    -ms-transform: rotate(-4deg);
-    transform: rotate(-4deg); */
-}
 /* ----------------------------------- 
 ** Desktop
 */
