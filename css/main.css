@@ -143,25 +143,54 @@ h3 {
     padding: 0.3em;
 }
 
-
-
 /* ----------------------------------- 
-** Desktop
+** Desktops
 */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1281px) {
 	#about .info-container {
 		max-width: 450px;
 	}
 }
-/* ----------------------------------- 
-** Tablet 
+  
+/* -----------------------------------
+** Laptops, Desktops
 */
-@media only screen and (min-width: 812px) and (max-width: 1199px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
 	
 }
+  
+/* -----------------------------------
+** Tablets, Ipads (portrait)
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+  
+/* -----------------------------------
+** Tablets, Ipads (landscape)
+*/  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+}
+  
+/* -----------------------------------
+** Low Resolution Tablets, Mobiles (Landscape)
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+	
+}
+  
+/* -----------------------------------
+** Most of the Smartphones Mobiles (Portrait)
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+	
+}
+
 /* ----------------------------------- 
 ** Mobile  
 */
-@media only screen and (min-width: 0px) and (max-width: 811px) {
+@media (min-width: 0px) and (max-width: 320px) {
 	
 }
