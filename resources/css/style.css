@@ -1,0 +1,323 @@
+/* ----------------------------------- fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:600,600i,900,900i&display=swap');
+/* ----------------------------------- 
+** Generic
+*/
+* {
+	font-size: 16px;
+	color: #cbcbcb;
+	text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oxygen', helvetica, sans-serif;
+	letter-spacing: 0.04em;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.25em;
+    transition: font-size 0.25s ease;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    line-height: 0.85;
+}
+p {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    margin: 0;
+    font-weight: 300;
+    max-width: 500px;
+}
+a {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #cbcbcb;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    list-style: none;
+}
+.heading {
+    width: 100%;
+    text-align: left;
+    font-size: 2em;
+    /* margin-bottom: 2.5rem; */
+}
+
+
+
+/* 3. Structure Styles
+======================================== */
+.section-wrap {
+    margin: 5rem 0;
+}
+.container-col {
+    display: flex;
+    flex-direction: column;
+}
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+	margin:1em; 
+	padding:1em 1em 2em;
+}
+
+.row {
+    width:100%;
+}
+
+/* 4. Modules Styles
+======================================== */
+
+/* Site Navigation */
+
+/* Site Footer */
+
+footer {
+    background-color: rgb(36, 36, 36);
+    padding: 0.5rem;
+}
+
+footer .container-row {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer p {
+    color: #cbcbcb;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+/* 5. Component Styles
+======================================== */
+button {
+    border: none;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    background-color: transparent;
+  }
+
+
+
+svg, svg image {
+    width: 30px;
+    height: 30px;
+}
+svg path {
+    fill: #cbcbcb;
+}
+
+.contact-icon {
+    align-items: center;
+    gap: 1rem;
+    padding: 1em 0;
+}
+.portfolio-icon {
+    align-items: center;
+    gap: 1rem;
+    padding: 1em 0;
+    margin-right: 0em;
+
+    border-radius: 2em;
+    border: 2px solid #cbcbcb00;
+    transition: all 0.75s ease-in-out;
+}
+
+.portfolio-icon-text {
+    position: fixed;
+    margin: -0.6em 0em;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    color: #cbcbcb;
+}
+.hidden-box {
+    width: 0;
+    height: 0;
+    transition: all 0.25s ease-in-out;
+}
+  /* ------- icon hover ------- */
+.contact-icon:hover svg {
+  box-shadow: 0 10px 25px rgba(25,255,255, 0.1);
+}
+.portfolio-icon:hover{
+    padding: 1em 2em;
+    margin-right: 1em;
+    border-radius: 2em;
+    border: 2px solid #cbcbcb;
+    box-shadow: 0 10px 25px rgba(25,255,255, 0.1);
+}
+.portfolio-icon:hover .hidden-box {
+    width: 6.25rem;
+}
+.portfolio-icon:hover .portfolio-icon-text{
+    opacity: 1;
+}
+  /* 6. Splash
+======================================== */
+.splash-container {
+    height: 100vh;
+}
+
+#splash {
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+}
+
+#splash .row {
+    width: 50%;
+    padding: 1em;
+}
+
+/* ----------------------------------- 
+** Left
+*/
+.splash-portfolio {
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-card {
+    width: 75%;
+    height: auto;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 600px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+}
+/* ----------------------------------- 
+** Right
+*/
+.about-content {
+    justify-content: center;
+}
+.heading .container-row, 
+#about .portfolio-skill{
+    align-items: center;
+    justify-content: left;
+}
+#about .container-row a {
+    display: flex;
+}
+#about .container-row button {
+    margin: 0;
+    font-size: 1.5em;
+}
+.contact-icons {
+    gap: 1em;
+}
+
+/* To do:   hover over skills animation
+            onlick change image in left container
+======================================== */
+/* button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    color: blue;
+} */
+
+  /* 6. Responsive
+======================================== */
+
+/* ----------------------------------- 
+** Desktops
+*/
+@media (min-width: 1281px) {
+	
+}
+  
+/* -----------------------------------
+** Laptops, Desktops
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* -----------------------------------
+** Tablets, Ipads (portrait) most devices
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	/* ------------ Generic ------------*/
+
+}
+
+/* -----------------------------------
+** Tablets, Ipads (landscape)
+*/  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+
+/* -----------------------------------
+** Low Resolution Tablets, Mobiles (Landscape)
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+  
+/* -----------------------------------
+** Most of the Smartphones Mobiles (Portrait)
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
+/* ----------------------------------- 
+** Mobile  
+*/
+@media (min-width: 0px) and (max-width: 320px) {
+
+}
