@@ -142,12 +142,11 @@ button {
     background-color: transparent;
   }
 
-
-
 svg, svg image {
     width: 30px;
     height: 30px;
 }
+
 svg path {
     fill: #cbcbcb;
 }
@@ -184,19 +183,7 @@ svg path {
 .contact-icon:hover svg {
   box-shadow: 0 10px 25px rgba(25,255,255, 0.1);
 }
-.portfolio-icon:hover{
-    padding: 1em 2em;
-    margin-right: 1em;
-    border-radius: 2em;
-    border: 2px solid #cbcbcb;
-    box-shadow: 0 10px 25px rgba(25,255,255, 0.1);
-}
-.portfolio-icon:hover .hidden-box {
-    width: 6.25rem;
-}
-.portfolio-icon:hover .portfolio-icon-text{
-    opacity: 1;
-}
+
   /* 6. Splash
 ======================================== */
 .splash-container {
@@ -223,8 +210,8 @@ svg path {
 .portfolio-card {
     width: 75%;
     height: auto;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
     max-width: 600px;
     max-height: 600px;
     overflow: hidden;
@@ -270,6 +257,52 @@ svg path {
 
   /* 6. Responsive
 ======================================== */
+
+/* ----------------------------------- 
+** Small Screens
+*/
+@media (min-width: 0px) and (max-width: 767px) {
+    #splash {
+        flex-direction: column;
+        align-items: center;
+    }
+    #splash .row {
+        width: 100%;
+    }
+    .portfolio-card {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .about-content {
+        max-width: 325px;
+    }
+}
+
+@media (min-width: 500px) {
+      /* ------- icon hover ------- */
+    .portfolio-icon:hover{
+      padding: 1em 2em;
+      margin-right: 1em;
+      border-radius: 2em;
+      border: 2px solid #cbcbcb;
+      box-shadow: 0 10px 25px rgba(25,255,255, 0.1);
+    }
+    .portfolio-icon:hover .hidden-box {
+        width: 6.25rem;
+    }
+    .portfolio-icon:hover .portfolio-icon-text{
+        opacity: 1;
+    }
+}
+@media (max-width: 500px) {
+    /* ------- icon hover ------- */
+    .portfolio-icon:hover svg {
+        box-shadow: 0 10px 25px rgba(25,255,255, 0.1);
+    }
+    .portfolio-icon {
+        padding: 0.5em 0;
+    }
+}
 
 /* ----------------------------------- 
 ** Desktops
